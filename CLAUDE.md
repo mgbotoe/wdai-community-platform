@@ -166,6 +166,10 @@ import { teamMembers } from '@/data/team-members'
 
 ## 📂 Repository Structure Rules
 
+**READ:** `docs/standards/repository-standards.md` for complete guidelines
+
+**Quick Rule:** Keep root directory ~15 files max. Only essential configs.
+
 **Root Directory (~15 files max):**
 - Only essential configs
 - NO source code, test files, or temporary files
@@ -179,16 +183,16 @@ import { teamMembers } from '@/data/team-members'
 
 **✅ Proper structure:**
 ```
-src/
-├── app/                  # Next.js pages
-├── components/           # React components (NO content)
-├── data/                 # ✅ Content goes here!
-│   ├── homepage.ts
-│   ├── team-members.ts
-│   └── navigation.ts
-├── lib/                  # Utilities, services
-└── types/                # TypeScript types
+app/                      # Next.js App Router
+components/               # React components (NO hardcoded content)
+data/                     # ✅ Content goes here!
+lib/                      # Clients, services, utilities
+types/                    # TypeScript types
+public/                   # Static assets
+docs/                     # Documentation
 ```
+
+**For complete .gitignore configuration:** See `docs/standards/repository-standards.md`
 
 ---
 
@@ -313,20 +317,23 @@ import { data } from '@/lib/data.ts'
 ## 📖 When You Need More Details
 
 **Content Management:** Read `docs/standards/content-management.md`
+**Repository Standards:** Read `docs/standards/repository-standards.md`
+**Skills & Agents Strategy:** Read `docs/standards/skills-agents-strategy.md`
 **Business Rules:** Read `docs/wdai-specific/business-rules.md`
 **Webhooks:** Read `docs/wdai-specific/webhook-patterns.md`
 **Database Security:** Read `docs/wdai-specific/rls-patterns.md`
 **Agent APIs:** Read `docs/wdai-specific/agent-api-patterns.md`
 **Architecture:** Check `docs/architecture/` folder
 **Design System:** Check `docs/design/` folder
+**Implementation Plan:** Check `docs/implementation/SOLO_DEV_PLAN.md`
 
 ---
 
 **This document is your contract with the codebase. Follow it strictly.**
 
-**Version:** 2.0 (Modular)
-**Last Updated:** November 2, 2025
-**Lines:** ~430 (down from 1,505)
+**Version:** 2.1 (Modular)
+**Last Updated:** November 3, 2025
+**Lines:** ~340 (down from 1,505)
 **Token Savings:** ~10,000 tokens per session
 
 ---

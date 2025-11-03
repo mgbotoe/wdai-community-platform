@@ -30,7 +30,9 @@ docs/
 │   └── screenshots/              # Visual references
 │
 ├── standards/                     # Universal best practices
-│   └── content-management.md     # **CRITICAL:** Avoid hardcoded data
+│   ├── content-management.md     # **CRITICAL:** Avoid hardcoded data
+│   ├── repository-standards.md   # Repository cleanliness & .gitignore
+│   └── skills-agents-strategy.md # When to use skills/agents proactively
 │
 ├── wdai-specific/                 # Project-specific rules
 │   ├── business-rules.md         # Membership tiers, roles, visibility
