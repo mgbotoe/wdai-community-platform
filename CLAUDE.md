@@ -43,28 +43,40 @@
 
 **BEFORE starting ANY task, you MUST:**
 
-1. **Check `/docs` folder structure:**
+1. **Check current implementation plan:**
    ```bash
-   ls -R docs/
+   cat docs/implementation/SOLO_DEV_PLAN.md
    ```
+   - Read current sprint and today's tasks
+   - Check task status (pending/in_progress/completed)
+   - Identify dependencies and blockers
 
-2. **Verify documentation organization:**
+2. **Update implementation plan as you work:**
+   - Mark tasks as `in_progress` when you start
+   - Mark tasks as `completed` when done
+   - Add new tasks discovered during implementation
+   - Update blockers and notes sections
+
+3. **Verify documentation organization:**
    ```
    docs/
+   ├── implementation/       # ⭐ CURRENT WORK PLAN (check first!)
+   │   └── SOLO_DEV_PLAN.md # Active sprint plan
    ├── design/               # Design system extraction
    ├── standards/            # Universal best practices
    ├── wdai-specific/        # Project-specific rules
    └── architecture/         # System architecture
    ```
 
-3. **Reference existing docs BEFORE creating new ones:**
+4. **Reference existing docs BEFORE creating new ones:**
+   - **docs/implementation/SOLO_DEV_PLAN.md** → **CURRENT SPRINT TASKS**
    - REQUIREMENTS.md → Single source of truth for features
    - PROJECT_ANALYSIS.md → Current implementation status
    - docs/standards/* → Development best practices
    - docs/wdai-specific/* → WDAI-specific patterns
    - docs/architecture/* → Technical specifications
 
-4. **NEVER create documents in root unless they are:**
+5. **NEVER create documents in root unless they are:**
    - CLAUDE.md (this file)
    - PROJECT_ANALYSIS.md
    - REQUIREMENTS.md
